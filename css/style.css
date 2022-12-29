@@ -108,7 +108,6 @@ span {
 .navbar-brand {
     font-size: 40px;
     font-weight: bold;
-    background-color: #00;
 }
 
 .navbar-brand a span,
@@ -121,13 +120,18 @@ span {
     margin-left: 700px;
     margin-top: 5px;
 }
-
 .navbar-nav a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     margin-right: 30px;
+    transition: all 0.4s;
 }
 
 .navbar-nav a:last-child {
     margin-right: 0px;
+    color: #FFFFF;
 }
 
 .navbar-nav a:hover {
@@ -239,6 +243,7 @@ span {
 
 .buy-btn {
     display: flex;
+    color: #ffffff;
 }
 
 .brk-btn {
@@ -536,8 +541,113 @@ span {
 }
 
 /*===============
-    7. FOOTER
+    8. FOOTER
 =================*/
+
+.footer {
+    background-color: #141414 !important;
+    padding: 60px 0;
+    position: relative;
+    color: #adb5bd;
+  }
+  
+  .footer .logo-footer {
+    color: #f8f9fc;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 3px 0;
+    letter-spacing: 1px;
+  }
+  
+  .footer .footer-head {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .footer .foot-subscribe .form-control {
+    background-color: #25304e;
+    border: 1px solid #25304e;
+    color: #f8f9fc;
+  }
+  
+  .footer .foot-subscribe .form-control:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .footer .foot-subscribe.foot-white .form-control {
+    color: #adb5bd;
+  }
+  
+  .footer .foot-subscribe input::-webkit-input-placeholder {
+    color: #adb5bd;
+  }
+  
+  .footer .foot-subscribe input:-ms-input-placeholder {
+    color: #adb5bd;
+  }
+  
+  .footer .foot-subscribe input::-ms-input-placeholder {
+    color: #adb5bd;
+  }
+  
+  .footer .foot-subscribe input::placeholder {
+    color: #adb5bd;
+  }
+  
+  .footer .text-foot {
+    color: #adb5bd;
+  }
+
+  .text-footer {
+    color: #202942 !important;
+  }
+  
+  .text-footer:hover {
+    color: #181e31 !important;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ a:hover {
+    color: #084281;
+    text-decoration: none;
+    background-color: transparent;
+}
+  
+  .footer .footer-list {
+    margin-bottom: 0;
+  }
+  
+  .footer .footer-list li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .footer-list li a {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  .footer .footer-list li a:hover {
+    color: #e6e8ea;
+  }
+  
+  .footer .footer-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer.footer-bar {
+    padding: 30px 0;
+  }
+  
+  .footer.footer-bar .payment-cards img {
+    height: 25px;
+  }
 
 .bg-footer {
   background-color: #101010 !important;
@@ -575,9 +685,91 @@ span {
     color: #f49c0f;
 }
 
+/*==================
+    8. 404 PAGE
+====================*/
+
+#pnf {
+    z-index: 1030;
+}
+
+.bg-pnf {
+    position: relative;
+    background-color: #101010;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.brk-btn-pnf {
+    border: 1px solid #007bff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    background-color: #007bff;
+    line-height: 48px;
+    min-width: 170px;
+    width: max-content;
+    padding: 0 15px;
+    transition: .35s;
+    box-shadow: 0 0 70px 0px rgba(0, 123, 255, .7);
+}
+
+.brk-btn-pnf:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.bg-pnf::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-pnfinner {
+    width: 100%;
+    height: 100%;
+}
+
+.pnf-content {
+    padding-top: 350px;
+}
+
+
+.pnfcontent-title {
+    text-align: center;
+}
+
+.pnfcontent-title a:hover {
+    color: #0004ff;
+}
+
+.pnfcontent-title p {
+    /* letter-spacing: 1px; */
+    margin-bottom: 100px;
+    margin-top: 5px;
+    text-transform: none;
+}
+
+.pnfcontent-title h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px
+}
 
 /*==================
-    8. ANIMATION
+    9. ANIMATION
 ====================*/
 
 @-webkit-keyframes sdb05 {
